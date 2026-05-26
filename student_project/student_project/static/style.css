@@ -1,0 +1,126 @@
+/* 🌈 BACKGROUND */
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #acb4d8, #dbee6d);
+    min-height: 100vh;
+}
+
+/* 🌟 HEADINGS */
+h1, h2 {
+    text-align: center;
+    color: rgb(136, 156, 112);
+    margin-top: 30px;
+}
+
+/* 📦 CENTER EVERYTHING */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🧊 FORM CARD */
+form {
+    background:whitesmoke;
+    padding: 30px;
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ✏ INPUT */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #8089b4;
+    outline: none;
+    box-shadow: 0 0 5px rgba(33, 54, 149, 0.5);
+}
+
+/* 🔘 BUTTON */
+button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(120deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* 📊 TABLE CARD */
+table {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 30px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border-collapse: collapse;
+}
+
+/* TABLE HEAD */
+th {
+    background: #121213;
+    color: white;
+    padding: 12px;
+}
+
+/* TABLE BODY */
+td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+/* HOVER */
+tr:hover {
+    background: #f5f5f5;
+}
+
+/* LINKS */
+a {
+    color: #667eea;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ERROR */
+span {
+    display: block;
+    text-align: center;
+    color: rgb(161, 82, 136);
+    margin-top: 10px;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    table {
+        width: 95%;
+    }
+}

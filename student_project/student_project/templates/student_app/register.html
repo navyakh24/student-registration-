@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Register</title>
+<link rel="stylesheet" href="{% static 'style.css' %}"></head>
+
+<body>
+
+    <h2>Student Register</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label>Username:</label>
+        <input type="text" name="username" required><br><br>
+
+        <label>Password:</label>
+        <input type="password" name="password" required><br><br>
+
+        <label>Confirm Password:</label>
+        <input type="password" name="confirm_password" required><br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <a href="{% url 'student_login' %}">
+        Already have an account? Login here.
+    </a>
+
+</body>
+</html>

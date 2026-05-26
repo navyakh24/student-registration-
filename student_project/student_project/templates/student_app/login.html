@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h2>Student Login</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <label>Username:</label>
+        <input type="text" name="username">
+
+        <label>Password:</label>
+        <input type="password" name="password">
+
+        <br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <span>{{ error }}</span>
+
+    <a href="{% url 'student_register' %}">
+        Don't have an account? Register here.
+    </a>
+</body>
+</html>
